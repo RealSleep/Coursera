@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class WordLengths {
 	
 	public static void main(String[] args) throws java.io.FileNotFoundException {
-		countWordLengths(new File("testWordLenSmallHamlet.txt"), 16);
+		countWordLengths(new File("manywords.txt"), 20);
 	}
 
 	public static void countWordLengths(File file, int count) throws java.io.FileNotFoundException {

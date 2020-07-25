@@ -9,7 +9,7 @@ public class BandMatrix {
 				if(Math.abs(j - indexDig) <= r) {
 					ch = '*';
 				}
-				System.out.print(ch + " ");
+				System.out.print(ch + "  ");
 			}
 			indexDig++;
 			System.out.println();

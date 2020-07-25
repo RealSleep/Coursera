@@ -6,7 +6,7 @@ public class RandomWalker {
 		int step = 0;
 		while (true) {
 			step++;
-			System.out.printf("(%d, %d)\n",x, y);
+			System.out.printf("(%d, %d)\n", x, y);
 			if(Math.abs(x) + Math.abs(y) == r) {
 				break;
 			}
@@ -23,6 +23,6 @@ public class RandomWalker {
 				y = y - 1;
 			}
 		}
-		System.out.println("steps = " + step);
+		System.out.println("steps = " + (step-1));
 	}
 }

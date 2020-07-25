@@ -15,15 +15,15 @@ public class RandomWalkers {
 					break;
 				}
 
-				int p = (int)(Math.random() * 4);
+				double p = Math.random();
 
-				if (p == 0) {
+				if (p >= 0 && p < 0.25) {
 					x = x + 1;
-				} else if (p == 1) {
+				} else if (p >= 0.25 && p < 0.5) {
 					x = x - 1;
-				} else if (p == 2) {
+				} else if (p >= 0.5 && p < 0.75) {
 					y = y + 1;
-				} else {
+				} else if (p >= 0.75 && p < 1) {
 					y = y - 1;
 				}
 			}
