@@ -4,20 +4,21 @@ import java.util.Scanner;
 public class CaesarCipher  {
 	
 	public static void main(String[] args) throws java.io.FileNotFoundException {
-		// File file = new File("wordsLotsOfEsEncrypted.txt");
-		// Scanner read = new Scanner(file);
-		// String all = "";
+		File file = new File("mysteryTwoKeysPractice.txt");
+		Scanner read = new Scanner(file);
+		String all = "";
 
-		// while(read.hasNext()) {
-		// 	all += read.next() + " ";
-		// }
+		while(read.hasNext()) {
+			all += read.next() + " ";
+		}
 
 		// System.out.println(decryptTwoKeys(all));	
 		// String mess = "Hello My dear frinedS";
-		String mess = "Top ncmy qkff vi vguv vbg ycpx";
-		System.out.println(encryptTwoKeys(mess, 26-2,26-20));
-		System.out.println(mess);
-		// System.out.println(decryptTwoKeys(mess));
+		// String mess = "Akag tjw Xibhr awoa aoee xakex znxag xwko";
+		// System.out.println(encryptTwoKeys("Hfs cpwewloj loks cd Hoto kyg Cyy.", 26-14,26-24));
+		// System.out.println(mess);
+		System.out.println(decryptTwoKeys(all));	
+		// System.out.println(encryptTwoKeys("Can you imagine life WITHOUT the internet AND computers in your pocket?",21,8));
 	}
 
 	public static String encrypt(String input, int key) {
@@ -75,7 +76,10 @@ public class CaesarCipher  {
 
 		String d_message1= encrypt(message1,(26-key1));
 		String d_message2= encrypt(message2,(26-key2));
-	
+			
+		System.out.println(key1);
+		System.out.println(key2);
+
 		for (int k=0; k<(message1.length());k++){
 			theAnswer.setCharAt((2*k), d_message1.charAt(k) );
 		}
